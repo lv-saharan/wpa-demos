@@ -1,0 +1,18 @@
+span.key {
+    &::after {
+        content: ':';
+    }
+
+    color:blue;
+}
+
+h1 {
+    font-size: 1.8rem;
+
+    &::after {
+        content: ' ';
+        display: block;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+}

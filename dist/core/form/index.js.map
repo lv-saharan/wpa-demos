@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../core/form/src/index.jsx"],
+  "sourcesContent": ["import {\r\n  h,\r\n  render,\r\n  Component,\r\n  classNames,\r\n  apis,\r\n} from \"wpa\";\r\n\r\nlet form1 = (\r\n  <form>\r\n    <h2>form1</h2>\r\n    <input required></input>\r\n    <input type=\"submit\" value=\"提交\"></input>\r\n    <input type=\"reset\" value=\"重置\"></input>\r\n  </form>\r\n);\r\n\r\nrender(form1, \"body\");\r\n"],
+  "mappings": "AAAA,OACE,KAAAA,EACA,UAAAC,MAIK,qBAEP,IAAIC,EACFF,EAAC,YACCA,EAAC,UAAG,OAAK,EACTA,EAAC,SAAM,SAAQ,GAAC,EAChBA,EAAC,SAAM,KAAK,SAAS,MAAM,KAAK,EAChCA,EAAC,SAAM,KAAK,QAAQ,MAAM,KAAK,CACjC,EAGFC,EAAOC,EAAO,MAAM",
+  "names": ["h", "render", "form1"]
+}

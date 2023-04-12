@@ -1,0 +1,51 @@
+{
+  "name": "wpa-demos",
+  "version": "1.0.1",
+  "description": "wpa and ui demos",
+  "type": "module",
+  "devExternals": {
+    "wpa": "/node_modules/wpa/dist/wpa.js",
+    "wpa-ui": "/node_modules/wpa-ui/dist/wpa-ui.js"
+  },
+  "externals": {
+    "wpa": "/wpa/latest/wpa.js",
+    "wpa-ui": "/wpa-ui/latest/wpa-ui.js"
+  },
+  "localDev": {
+    "server": {
+      "port": 8932
+    }
+  },
+  "scripts": {
+    "start": "node esbuild.js local",
+    "build": "node esbuild.js build",
+    "dev": "node esbuild.js dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lv-saharan/wpa-demos.git"
+  },
+  "keywords": [
+    "wpa",
+    "wpa-ui",
+    "bootstrap",
+    "demos"
+  ],
+  "author": "Lv-saharan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lv-saharan/wpa-demos/issues"
+  },
+  "homepage": "https://github.com/lv-saharan/wpa-demos#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.49",
+    "esbuild-sass-plugin": "^2.3.0",
+    "local-dev-server": "^1.0.17"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.0.3",
+    "mitt": "^3.0.0",
+    "wpa": "^1.0.6",
+    "wpa-ui": "^1.0.5"
+  }
+}

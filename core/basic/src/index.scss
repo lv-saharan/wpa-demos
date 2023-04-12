@@ -1,0 +1,14 @@
+:host {
+    h1 {
+        color: blue;
+    }
+
+    [data-pre]::before {
+        content: attr(data-pre) " ";
+    }
+
+    [data-color] {
+        color: attr(data-color color, black);
+
+    }
+}

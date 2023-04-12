@@ -1,0 +1,390 @@
+/* 这里是可覆盖的范围，默认不需要覆盖 */
+
+:root {
+    /* 每种控件自己的变量，初始值可以使用基本变量的，也可以自己根据情况复写 */
+    --wp-loading-color: var(--wp-primary);
+    --wp-loading-color-a: var(--wp-primary);
+    --wp-loading-color-b: var(--wp-primary);
+
+    /* 图标对齐 */
+    --wp-icon-valign: middle;
+    --wp-icon-color: var(--wp-primary);
+    --wp-icon-width: calc(var(--wp-body-font-size) * 1.5);
+    --wp-icon-height: calc(var(--wp-body-font-size) * 1.5);
+    /* 分页控件 */
+    --wp-pager-page-padding: 0.375rem 0.75rem;
+    --wp-pager-page-line-height: 1.2;
+    --wp-pager-page-bgcolor: var(--wp-body-bg);
+    --wp-pager-page-color: var(--wp-body-color);
+    --wp-pager-disable-color: var(--wp-secondary);
+    --wp-pager-info-color: var(--wp-primary);
+    --wp-pager-info-bgcolor: transparent;
+    --wp-pager-info-curr-color: var(--wp-danger);
+    --wp-pager-page-active-bgcolor: var(--wp-primary);
+    --wp-pager-page-active-color: var(--wp-body-bg);
+    --wp-pager-page-hover-bgcolor: #6f9ab8;
+    --wp-pager-page-hover-color: var(--wp-link-hover-color);
+
+    /* 页签控件 */
+    --wp-tab-nav-padding: 0.3rem 1rem;
+    --wp-tab-nav-line-height: 1.1rem;
+
+    --wp-tab-nav-border-top: none;
+    --wp-tab-nav-border-right: none;
+    --wp-tab-nav-border-bottom: none;
+    --wp-tab-nav-border-left: none;
+    --wp-tab-nav-color: var(--wp-dark);
+    --wp-tab-nav-font: 1.2rem var(--wp-body-font-family);
+
+    --wp-tab-nav-active-border-top: none;
+    --wp-tab-nav-active-border-right: none;
+    --wp-tab-nav-active-border-bottom: var(--wp-border-width) var(--wp-border-style) var(--wp-primar);
+    --wp-tab-nav-active-border-left: none;
+    --wp-tab-nav-active-color: var(--wp-link-color);
+    --wp-tab-nav-active-font: 1.2rem var(--wp-body-font-family);
+
+
+    --wp-tab-nav-hover-border-top: none;
+    --wp-tab-nav-hover-border-right: none;
+    --wp-tab-nav-hover-border-bottom: var(--wp-border-width) var(--wp-border-style) var(--wp-danger);
+    --wp-tab-nav-hover-border-left: none;
+    --wp-tab-nav-hover-color: var(--wp-link-hover-color);
+    --wp-tab-nav-hover-font: 1.2rem var(--wp-body-font-family);
+
+    --wp-tab-nav-panes-padding: 1rem;
+
+    --wp-tab-loading-size: 5rem;
+
+    /*tree*/
+    --wp-tree-node-font: 1.2rem var(--wp-body-font-family);
+    --wp-tree-expander-color: green;
+    --wp-tree-expander-size: 1.2rem;
+    --wp-tree-node-hover-bgcolor: #cfe2ff;
+    --wp-tree-node-selected-bgcolor: #9ec5fe;
+    --wp-tree-node-selected-color: black;
+
+
+    /* buttons */
+    --wp-btn-padding-x: 0.75rem;
+    --wp-btn-padding-y: 0.375rem;
+    --wp-btn-font-family: ;
+    --wp-btn-font-size: 1rem;
+    --wp-btn-font-weight: 400;
+    --wp-btn-line-height: 1.5;
+    --wp-btn-color: #212529;
+    --wp-btn-bg: transparent;
+    --wp-btn-border-width: 1px;
+    --wp-btn-border-color: transparent;
+    --wp-btn-border-radius: 0.375rem;
+    --wp-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --wp-btn-disabled-opacity: 0.65;
+    --wp-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--wp-btn-focus-shadow-rgb), .5);
+
+
+    --wp-btn-primary-color: #fff;
+    --wp-btn-primary-bg: #0d6efd;
+    --wp-btn-primary-border-color: #0d6efd;
+    --wp-btn-primary-hover-color: #fff;
+    --wp-btn-primary-hover-bg: #0b5ed7;
+    --wp-btn-primary-hover-border-color: #0a58ca;
+    --wp-btn-primary-focus-shadow-rgb: 49, 132, 253;
+    --wp-btn-primary-active-color: #fff;
+    --wp-btn-primary-active-bg: #0a58ca;
+    --wp-btn-primary-active-border-color: #0a53be;
+    --wp-btn-primary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-primary-disabled-color: #fff;
+    --wp-btn-primary-disabled-bg: #0d6efd;
+    --wp-btn-primary-disabled-border-color: #0d6efd;
+
+    --wp-btn-primary-color: #fff;
+    --wp-btn-primary-bg: #6c757d;
+    --wp-btn-primary-border-color: #6c757d;
+    --wp-btn-primary-hover-color: #fff;
+    --wp-btn-primary-hover-bg: #5c636a;
+    --wp-btn-primary-hover-border-color: #565e64;
+    --wp-btn-primary-focus-shadow-rgb: 130, 138, 145;
+    --wp-btn-primary-active-color: #fff;
+    --wp-btn-primary-active-bg: #565e64;
+    --wp-btn-primary-active-border-color: #51585e;
+    --wp-btn-primary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-primary-disabled-color: #fff;
+    --wp-btn-primary-disabled-bg: #6c757d;
+    --wp-btn-primary-disabled-border-color: #6c757d;
+
+    --wp-btn-secondary-color: #fff;
+    --wp-btn-secondary-bg: #6c757d;
+    --wp-btn-secondary-border-color: #6c757d;
+    --wp-btn-secondary-hover-color: #fff;
+    --wp-btn-secondary-hover-bg: #5c636a;
+    --wp-btn-secondary-hover-border-color: #565e64;
+    --wp-btn-secondary-focus-shadow-rgb: 130, 138, 145;
+    --wp-btn-secondary-active-color: #fff;
+    --wp-btn-secondary-active-bg: #565e64;
+    --wp-btn-secondary-active-border-color: #51585e;
+    --wp-btn-secondary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-secondary-disabled-color: #fff;
+    --wp-btn-secondary-disabled-bg: #6c757d;
+    --wp-btn-secondary-disabled-border-color: #6c757d;
+
+
+    --wp-btn-sucess-color: #fff;
+    --wp-btn-sucess-bg: #198754;
+    --wp-btn-sucess-border-color: #198754;
+    --wp-btn-sucess-hover-color: #fff;
+    --wp-btn-sucess-hover-bg: #157347;
+    --wp-btn-sucess-hover-border-color: #146c43;
+    --wp-btn-sucess-focus-shadow-rgb: 60, 153, 110;
+    --wp-btn-sucess-active-color: #fff;
+    --wp-btn-sucess-active-bg: #146c43;
+    --wp-btn-sucess-active-border-color: #13653f;
+    --wp-btn-sucess-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-sucess-disabled-color: #fff;
+    --wp-btn-sucess-disabled-bg: #198754;
+    --wp-btn-sucess-disabled-border-color: #198754;
+
+    --wp-btn-info-color: #000;
+    --wp-btn-info-bg: #0dcaf0;
+    --wp-btn-info-border-color: #0dcaf0;
+    --wp-btn-info-hover-color: #000;
+    --wp-btn-info-hover-bg: #31d2f2;
+    --wp-btn-info-hover-border-color: #25cff2;
+    --wp-btn-info-focus-shadow-rgb: 11, 172, 204;
+    --wp-btn-info-active-color: #000;
+    --wp-btn-info-active-bg: #3dd5f3;
+    --wp-btn-info-active-border-color: #25cff2;
+    --wp-btn-info-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-info-disabled-color: #000;
+    --wp-btn-info-disabled-bg: #0dcaf0;
+    --wp-btn-info-disabled-border-color: #0dcaf0;
+
+    --wp-btn-warning-color: #000;
+    --wp-btn-warning-bg: #ffc107;
+    --wp-btn-warning-border-color: #ffc107;
+    --wp-btn-warning-hover-color: #000;
+    --wp-btn-warning-hover-bg: #ffca2c;
+    --wp-btn-warning-hover-border-color: #ffc720;
+    --wp-btn-warning-focus-shadow-rgb: 217, 164, 6;
+    --wp-btn-warning-active-color: #000;
+    --wp-btn-warning-active-bg: #ffcd39;
+    --wp-btn-warning-active-border-color: #ffc720;
+    --wp-btn-warning-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-warning-disabled-color: #000;
+    --wp-btn-warning-disabled-bg: #ffc107;
+    --wp-btn-warning-disabled-border-color: #ffc107;
+
+    --wp-btn-danger-color: #fff;
+    --wp-btn-danger-bg: #dc3545;
+    --wp-btn-danger-border-color: #dc3545;
+    --wp-btn-danger-hover-color: #fff;
+    --wp-btn-danger-hover-bg: #bb2d3b;
+    --wp-btn-danger-hover-border-color: #b02a37;
+    --wp-btn-danger-focus-shadow-rgb: 225, 83, 97;
+    --wp-btn-danger-active-color: #fff;
+    --wp-btn-danger-active-bg: #b02a37;
+    --wp-btn-danger-active-border-color: #a52834;
+    --wp-btn-danger-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-danger-disabled-color: #fff;
+    --wp-btn-danger-disabled-bg: #dc3545;
+    --wp-btn-danger-disabled-border-color: #dc3545;
+
+    --wp-btn-light-color: #000;
+    --wp-btn-light-bg: #f8f9fa;
+    --wp-btn-light-border-color: #f8f9fa;
+    --wp-btn-light-hover-color: #000;
+    --wp-btn-light-hover-bg: #d3d4d5;
+    --wp-btn-light-hover-border-color: #c6c7c8;
+    --wp-btn-light-focus-shadow-rgb: 211, 212, 213;
+    --wp-btn-light-active-color: #000;
+    --wp-btn-light-active-bg: #c6c7c8;
+    --wp-btn-light-active-border-color: #babbbc;
+    --wp-btn-light-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-light-disabled-color: #000;
+    --wp-btn-light-disabled-bg: #f8f9fa;
+    --wp-btn-light-disabled-border-color: #f8f9fa;
+
+    --wp-btn-dark-color: #fff;
+    --wp-btn-dark-bg: #212529;
+    --wp-btn-dark-border-color: #212529;
+    --wp-btn-dark-hover-color: #fff;
+    --wp-btn-dark-hover-bg: #424649;
+    --wp-btn-dark-hover-border-color: #373b3e;
+    --wp-btn-dark-focus-shadow-rgb: 66, 70, 73;
+    --wp-btn-dark-active-color: #fff;
+    --wp-btn-dark-active-bg: #4d5154;
+    --wp-btn-dark-active-border-color: #373b3e;
+    --wp-btn-dark-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-dark-disabled-color: #fff;
+    --wp-btn-dark-disabled-bg: #212529;
+    --wp-btn-dark-disabled-border-color: #212529;
+
+    --wp-btn-outline-primary-color: #0d6efd;
+    --wp-btn-outline-primary-border-color: #0d6efd;
+    --wp-btn-outline-primary-hover-color: #fff;
+    --wp-btn-outline-primary-hover-bg: #0d6efd;
+    --wp-btn-outline-primary-hover-border-color: #0d6efd;
+    --wp-btn-outline-primary-focus-shadow-rgb: 13, 110, 253;
+    --wp-btn-outline-primary-active-color: #fff;
+    --wp-btn-outline-primary-active-bg: #0d6efd;
+    --wp-btn-outline-primary-active-border-color: #0d6efd;
+    --wp-btn-outline-primary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-primary-disabled-color: #0d6efd;
+    --wp-btn-outline-primary-disabled-bg: transparent;
+    --wp-btn-outline-primary-disabled-border-color: #0d6efd;
+    --wp-outline-primary-gradient: none;
+
+    --wp-btn-outline-secondary-color: #6c757d;
+    --wp-btn-outline-secondary-border-color: #6c757d;
+    --wp-btn-outline-secondary-hover-color: #fff;
+    --wp-btn-outline-secondary-hover-bg: #6c757d;
+    --wp-btn-outline-secondary-hover-border-color: #6c757d;
+    --wp-btn-outline-secondary-focus-shadow-rgb: 108, 117, 125;
+    --wp-btn-outline-secondary-active-color: #fff;
+    --wp-btn-outline-secondary-active-bg: #6c757d;
+    --wp-btn-outline-secondary-active-border-color: #6c757d;
+    --wp-btn-outline-secondary-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-secondary-disabled-color: #6c757d;
+    --wp-btn-outline-secondary-disabled-bg: transparent;
+    --wp-btn-outline-secondary-disabled-border-color: #6c757d;
+    --wp-outline-secondary-gradient: none;
+
+    --wp-btn-outline-success-color: #198754;
+    --wp-btn-outline-success-border-color: #198754;
+    --wp-btn-outline-success-hover-color: #fff;
+    --wp-btn-outline-success-hover-bg: #198754;
+    --wp-btn-outline-success-hover-border-color: #198754;
+    --wp-btn-outline-success-focus-shadow-rgb: 25, 135, 84;
+    --wp-btn-outline-success-active-color: #fff;
+    --wp-btn-outline-success-active-bg: #198754;
+    --wp-btn-outline-success-active-border-color: #198754;
+    --wp-btn-outline-success-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-success-disabled-color: #198754;
+    --wp-btn-outline-success-disabled-bg: transparent;
+    --wp-btn-outline-success-disabled-border-color: #198754;
+    --wp-outline-success-gradient: none;
+
+    --wp-btn-outline-info-color: #0dcaf0;
+    --wp-btn-outline-info-border-color: #0dcaf0;
+    --wp-btn-outline-info-hover-color: #000;
+    --wp-btn-outline-info-hover-bg: #0dcaf0;
+    --wp-btn-outline-info-hover-border-color: #0dcaf0;
+    --wp-btn-outline-info-focus-shadow-rgb: 13, 202, 240;
+    --wp-btn-outline-info-active-color: #000;
+    --wp-btn-outline-info-active-bg: #0dcaf0;
+    --wp-btn-outline-info-active-border-color: #0dcaf0;
+    --wp-btn-outline-info-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-info-disabled-color: #0dcaf0;
+    --wp-btn-outline-info-disabled-bg: transparent;
+    --wp-btn-outline-info-disabled-border-color: #0dcaf0;
+    --wp-outline-info-gradient: none;
+
+    --wp-btn-outline-warning-color: #ffc107;
+    --wp-btn-outline-warning-border-color: #ffc107;
+    --wp-btn-outline-warning-hover-color: #000;
+    --wp-btn-outline-warning-hover-bg: #ffc107;
+    --wp-btn-outline-warning-hover-border-color: #ffc107;
+    --wp-btn-outline-warning-focus-shadow-rgb: 255, 193, 7;
+    --wp-btn-outline-warning-active-color: #000;
+    --wp-btn-outline-warning-active-bg: #ffc107;
+    --wp-btn-outline-warning-active-border-color: #ffc107;
+    --wp-btn-outline-warning-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-warning-disabled-color: #ffc107;
+    --wp-btn-outline-warning-disabled-bg: transparent;
+    --wp-btn-outline-warning-disabled-border-color: #ffc107;
+    --wp-outline-warning-gradient: none;
+
+
+    --wp-btn-outline-danger-color: #dc3545;
+    --wp-btn-outline-danger-border-color: #dc3545;
+    --wp-btn-outline-danger-hover-color: #fff;
+    --wp-btn-outline-danger-hover-bg: #dc3545;
+    --wp-btn-outline-danger-hover-border-color: #dc3545;
+    --wp-btn-outline-danger-focus-shadow-rgb: 220, 53, 69;
+    --wp-btn-outline-danger-active-color: #fff;
+    --wp-btn-outline-danger-active-bg: #dc3545;
+    --wp-btn-outline-danger-active-border-color: #dc3545;
+    --wp-btn-outline-danger-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-danger-disabled-color: #dc3545;
+    --wp-btn-outline-danger-disabled-bg: transparent;
+    --wp-btn-outline-danger-disabled-border-color: #dc3545;
+    --wp-outline-danger-gradient: none;
+
+    --wp-btn-outline-light-color: #f8f9fa;
+    --wp-btn-outline-light-border-color: #f8f9fa;
+    --wp-btn-outline-light-hover-color: #000;
+    --wp-btn-outline-light-hover-bg: #f8f9fa;
+    --wp-btn-outline-light-hover-border-color: #f8f9fa;
+    --wp-btn-outline-light-focus-shadow-rgb: 248, 249, 250;
+    --wp-btn-outline-light-active-color: #000;
+    --wp-btn-outline-light-active-bg: #f8f9fa;
+    --wp-btn-outline-light-active-border-color: #f8f9fa;
+    --wp-btn-outline-light-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-light-disabled-color: #f8f9fa;
+    --wp-btn-outline-light-disabled-bg: transparent;
+    --wp-btn-outline-light-disabled-border-color: #f8f9fa;
+    --wp-outline-light-gradient: none;
+
+    --wp-btn-outline-dark-color: #212529;
+    --wp-btn-outline-dark-border-color: #212529;
+    --wp-btn-outline-dark-hover-color: #fff;
+    --wp-btn-outline-dark-hover-bg: #212529;
+    --wp-btn-outline-dark-hover-border-color: #212529;
+    --wp-btn-outline-dark-focus-shadow-rgb: 33, 37, 41;
+    --wp-btn-outline-dark-active-color: #fff;
+    --wp-btn-outline-dark-active-bg: #212529;
+    --wp-btn-outline-dark-active-border-color: #212529;
+    --wp-btn-outline-dark-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --wp-btn-outline-dark-disabled-color: #212529;
+    --wp-btn-outline-dark-disabled-bg: transparent;
+    --wp-btn-outline-dark-disabled-border-color: #212529;
+    --wp-outline-dark-gradient: none;
+
+    --wp-btn-font-weight: var(--wp-btn-link-font-weight, 400);
+    --wp-btn-color: var(--wp-btn-link-color, var(--wp-link-color));
+    --wp-btn-bg: var(--wp-btn-link-bg, transparent);
+    --wp-btn-border-color: var(--wp-btn-link-border-color, transparent);
+    --wp-btn-hover-color: var(--wp-btn-link-hover-color, var(--wp-link-hover-color));
+    --wp-btn-hover-border-color: var(--wp-btn-link-hover-border-color, transparent);
+    --wp-btn-active-color: var(--wp-btn-link-active-color, var(--wp-link-hover-color));
+    --wp-btn-active-border-color: var(--wp-btn-link-active-border-color, transparent);
+    --wp-btn-disabled-color: var(--wp-btn-link-disabled-color, #6c757d);
+    --wp-btn-disabled-border-color: var(--wp-btn-link-disabled-border-color, transparent);
+    --wp-btn-box-shadow: var(--wp-btn-link-box-shadow, none);
+    --wp-btn-focus-shadow-rgb: var(--wp-btn-link-focus-shadow-rgb, 49, 132, 253);
+
+    --wp-btn-link-font-weight: 400;
+    --wp-btn-link-color: var(--wp-link-color);
+    --wp-btn-link-bg: transparent;
+    --wp-btn-link-border-color: transparent;
+    --wp-btn-link-hover-color: var(--wp-link-hover-color);
+    --wp-btn-link-hover-border-color: transparent;
+    --wp-btn-link-active-color: var(--wp-link-hover-color);
+    --wp-btn-link-active-border-color: transparent;
+    --wp-btn-link-disabled-color: #6c757d;
+    --wp-btn-link-disabled-border-color: transparent;
+    --wp-btn-link-box-shadow: none;
+    --wp-btn-link-focus-shadow-rgb: 49, 132, 253;
+
+    --wp-btn-lg-padding-y: 0.5rem;
+    --wp-btn-lg-padding-x: 1rem;
+    --wp-btn-lg-font-size: 1.25rem;
+    --wp-btn-lg-border-radius: 0.5rem;
+
+    --wp-btn-sm-padding-y: 0.25rem;
+    --wp-btn-sm-padding-x: 0.5rem;
+    --wp-btn-sm-font-size: 0.875rem;
+    --wp-btn-sm-border-radius: 0.25rem;
+
+    /* scrollbar */
+    --wp-scrollbar-bg: transparent;
+    --wp-scrollbar-hover-bg: rgb(204, 63, 169);
+
+
+}
+
+
+
+
+/* :root::theme(wp-button-default) {
+    color: rebeccapurple;
+    padding: .8rem 1rem;
+} */

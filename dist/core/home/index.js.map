@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../core/home/src/index.jsx"],
+  "sourcesContent": ["import { h, render, Component, classNames, define } from \"wpa\";\r\n\r\ndefine(\r\n  \"a-c\",\r\n  class extends Component {\r\n    static defaultProps = {\r\n      value: 7788,\r\n    };\r\n    static propTypes = {\r\n      value: Number,\r\n    };\r\n    get value() {\r\n      return this.$props.value;\r\n    }\r\n    set value(value) {\r\n      this.update$Props({ value }, { updateAttrs: true });\r\n    }\r\n    render() {\r\n      return <div>value is { this.value }</div>;\r\n    }\r\n  }\r\n);\r\n\r\nrender(<a-c value=\"123\" name=\"ljj\" at1=\"abc\" at2=\"890\" />, \"body\");\r\n"],
+  "mappings": "wKAAA,OAAS,KAAAA,EAAG,UAAAC,EAAQ,aAAAC,EAAuB,UAAAC,MAAc,qBAAzD,IAAAC,EAEAC,EACE,OACAD,EAAA,cAAcE,CAAU,CAOtB,IAAI,OAAQ,CACV,OAAO,KAAK,OAAO,KACrB,CACA,IAAI,MAAMC,EAAO,CACf,KAAK,aAAa,CAAE,MAAAA,CAAM,EAAG,CAAE,YAAa,EAAK,CAAC,CACpD,CACA,QAAS,CACP,OAAOC,EAAC,WAAI,YAAW,KAAK,KAAO,CACrC,CACF,EAfEC,EADFL,EACS,eAAe,CACpB,MAAO,IACT,GACAK,EAJFL,EAIS,YAAY,CACjB,MAAO,MACT,GANFA,EAiBF,EAEAM,EAAOF,EAAC,OAAI,MAAM,MAAM,KAAK,MAAM,IAAI,MAAM,IAAI,MAAM,EAAI,MAAM",
+  "names": ["h", "render", "Component", "define", "_a", "define", "Component", "value", "h", "__publicField", "render"]
+}

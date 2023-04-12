@@ -1,0 +1,273 @@
+[
+    {
+        "key": "home",
+        "name": "首页"
+    },
+    {
+        "key": "icon",
+        "name": "图标",
+        "icon": "image"
+    },
+    {
+        "key": "rate",
+        "name": "投票",
+        "icon": "star_rate"
+    },
+    {
+        "key": "tab",
+        "name": "页签"
+    },
+    {
+        "key": "image-selector",
+        "name": "图片选择",
+        "icon": "image"
+    },
+    {
+        "key": "uploader",
+        "name": "上传",
+        "icon": "image",
+        "url": "../bootstrap/index.js"
+    },
+    {
+        "key": "pager",
+        "name": "分页",
+        "icon": "pages"
+    },
+    {
+        "key": "tree",
+        "name": "树",
+        "icon": "account_tree"
+    },
+    {
+        "key": "loading",
+        "name": "Loadings",
+        "iconElement": "<wp-loading />"
+    },
+    {
+        "key": "sortable",
+        "name": "排序",
+        "icon": "sort",
+        "url": "../remote/index.js",
+        "module": "sortable"
+    },
+    {
+        "key": "editor",
+        "name": "编辑器",
+        "icon": "editor",
+        "url": "../remote/index.js",
+        "module": "editor"
+    },
+    {
+        "key": "echarts",
+        "name": "图表",
+        "icon": "chart",
+        "url": "../remote/index.js",
+        "module": "echarts"
+    },
+    {
+        "key": "styles",
+        "name": "样式",
+        "icon": "style",
+        "type": "folder",
+        "children": [
+            {
+                "key": "accordion",
+                "name": "手風琴",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "alert",
+                "name": "警告",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "badge",
+                "name": "徽章",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "breadcrumb",
+                "name": "导航",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "card",
+                "name": "卡片",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "carousel",
+                "name": "幻灯",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "buttons",
+                "name": "按钮",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "dropdowns",
+                "name": "下拉列表",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "listGroup",
+                "name": "列表",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "modal",
+                "name": "对话框",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "popover",
+                "name": "彈出層",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "tooltip",
+                "name": "提示",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "progress",
+                "name": "进度条",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "toast",
+                "name": "提示框",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "scrollbar",
+                "name": "滚动条",
+                "icon": "scroll",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "oilayout",
+                "name": "布局",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "import",
+                "name": "导入",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "offcanvas",
+                "name": "边栏",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "oiform",
+                "name": "wp 表单",
+                "url": "../bootstrap/index.js"
+            },
+            {
+                "key": "classes",
+                "name": "自动样式"
+            },
+            {
+                "key": "layout",
+                "name": "布局",
+                "type": "folder",
+                "children": [
+                    {
+                        "key": "containers",
+                        "name": "容器",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "grid",
+                        "name": "表格",
+                        "url": "../bootstrap/index.js"
+                    }
+                ]
+            },
+            {
+                "key": "content",
+                "name": "内容",
+                "type": "folder",
+                "children": [
+                    {
+                        "key": "images",
+                        "name": "图片",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "tables",
+                        "name": "表格",
+                        "url": "../bootstrap/index.js"
+                    }
+                ]
+            },
+            {
+                "key": "forms",
+                "name": "表单",
+                "type": "folder",
+                "children": [
+                    {
+                        "key": "form",
+                        "name": "表单",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "select",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "check_radio",
+                        "name": "checks & radios",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "range",
+                        "name": "range",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "input_group",
+                        "name": "input group",
+                        "url": "../bootstrap/index.js"
+                    },
+                    {
+                        "key": "floatingLabels",
+                        "name": "floating labels",
+                        "url": "../bootstrap/index.js"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "remote",
+        "name": "远程模块",
+        "icon": "cloud",
+        "type": "folder",
+        "children": [
+            {
+                "key": "default",
+                "name": "默認",
+                "icon": "auto_fix_high",
+                "rule": ":sub?",
+                "url": "../remote/index.js"
+            },
+            {
+                "key": "welcome",
+                "name": "欢迎",
+                "icon": "wb_sunny",
+                "url": "../remote/index.js"
+            },
+            {
+                "key": "user",
+                "name": "用户",
+                "icon": "person",
+                "url": "../remote/index.js",
+                "module": "user"
+            }
+        ]
+    }
+]

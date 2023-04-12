@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../core/unsafeHTML/src/index.jsx"],
+  "sourcesContent": ["import { h, render, uniqueTag, Component } from \"wpa\";\r\n\r\nlet App = uniqueTag(\r\n  class extends Component {\r\n    html = \"<h1>hello,world</h1>\";\r\n    render() {\r\n      return <div unsafeHTML={this.html}></div>;\r\n    }\r\n  }\r\n);\r\n\r\nrender(<App />, \"body\");\r\n"],
+  "mappings": "AAAA,OAAS,KAAAA,EAAG,UAAAC,EAAQ,aAAAC,EAAW,aAAAC,MAAiB,qBAEhD,IAAIC,EAAMF,EACR,cAAcC,CAAU,CACtB,KAAO,uBACP,QAAS,CACP,OAAOH,EAAC,OAAI,WAAY,KAAK,KAAM,CACrC,CACF,CACF,EAEAC,EAAOD,EAACI,EAAA,IAAI,EAAI,MAAM",
+  "names": ["h", "render", "uniqueTag", "Component", "App"]
+}

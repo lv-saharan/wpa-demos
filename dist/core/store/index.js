@@ -1,0 +1,2 @@
+import{h as e,render as r,Component as n,uniqueTag as s}from"/wpa/latest/wpa.js";var t=s(class extends n{store={name:"sa"};render(){return e("h3",null,"App3  ",this.store.name)}}),a=s(class extends n{store={name:"saha"};render(){return e(e.f,null,e("h3",null,"App2 ",this.store.name),e(t,null))}}),p=s(class extends n{render(){return e(e.f,null,e("h3",null,"App1 ",this.store.name),e(a,null))}});r(e(p,null),"body",{name:"saharan"});
+//# sourceMappingURL=index.js.map

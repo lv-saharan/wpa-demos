@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../core/render/src/index.jsx"],
+  "sourcesContent": ["import {h,render} from 'wpa'\r\n\r\nrender(<h1>hello</h1>,'body')"],
+  "mappings": "AAAA,OAAQ,KAAAA,EAAE,UAAAC,MAAa,qBAEvBA,EAAOD,EAAC,UAAG,OAAK,EAAM,MAAM",
+  "names": ["h", "render"]
+}

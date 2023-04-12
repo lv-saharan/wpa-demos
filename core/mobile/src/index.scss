@@ -1,0 +1,36 @@
+:root {
+    --header-height: 2rem;
+    --footer-height: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: aqua;
+    height: var(--header-height);
+    width: 100%;
+    position: relative;
+
+    b {
+        font-size: .6rem;
+    }
+}
+
+main {
+    position: relative;
+    background-color: cadetblue;
+    box-sizing: content-box;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    overflow: auto;
+}
+
+footer {
+    background-color: aqua;
+    height: var(--footer-height);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}

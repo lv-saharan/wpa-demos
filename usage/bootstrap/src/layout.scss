@@ -1,0 +1,80 @@
+:host {
+    --layout-tools-width: 3rem;
+    --wp-layout-left-padding: 0 0 0 var(--layout-tools-width);
+    --wp-icon-color: #39A7F1;
+    --wp-icon-width: 2rem;
+    --wp-icon-height: var(--wp-icon-width);
+    color: white;
+
+}
+
+wp-layout {
+    background-color: #2d2d2d;
+}
+
+
+[slot=footer],
+[slot=header] {
+    height: 3rem;
+    background-color: #323233;
+
+}
+
+[slot=header] li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    margin: .5rem 1rem;
+}
+
+
+
+[slot=left] {
+    font-size: .8rem;
+    width: 20rem;
+    height: 100%;
+    background: #252526;
+    color: white;
+    overflow: auto;
+}
+
+.tools {
+    position: absolute;
+    width: var(--layout-tools-width);
+    background-color: #333333;
+    text-align: center;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+
+}
+
+
+[slot=left] ul {
+    margin: 0;
+    padding: 0;
+}
+
+[slot=left] ul>li {
+    list-style: none;
+    color: white;
+    margin: .5rem;
+}
+
+[slot=right] {
+    width: 20rem;
+    height: 100%;
+    background-color: #252526;
+    overflow: auto;
+
+}
+
+[slot=right]>ul {
+}
+
+[slot=content] {
+    background-color: #1e1e1e;
+    height: 100%;
+    overflow: auto;
+}

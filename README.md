@@ -1,5 +1,5 @@
-# wpa-demos
-wpa framework demos
+# wpa ui demos
+wpa ui demos
 # URL
 [wpa UI ,一点示例](http://wpa.flatweb.net/demos/usage/ui/ "title")
 

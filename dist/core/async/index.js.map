@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../core/async/src/index.jsx"],
+  "sourcesContent": ["import { h, render, define, Component } from \"wpa\";\r\n\r\nimport css from \"./index.scss\";\r\n\r\nconst sleep = n => {\r\n  return new Promise(resolve => {\r\n    setTimeout(() => {\r\n      resolve()\r\n    }, n * 1000);\r\n  })\r\n}\r\ndefine(\"wp-async-1\", class extends Component {\r\n  async render() {\r\n    await sleep(1)\r\n    return <>\r\n      <h1>asyc....</h1>\r\n    </>\r\n  }\r\n})\r\n\r\ndefine(\"wp-app\", class extends Component {\r\n\r\n  render() {\r\n    return <>\r\n      <h1>hello,world</h1>\r\n      <wp-async-1 />\r\n    </>\r\n  }\r\n})\r\n\r\n\r\nrender(<wp-app></wp-app>, 'body')"],
+  "mappings": "AAAA,OAAS,KAAAA,EAAG,UAAAC,EAAQ,UAAAC,EAAQ,aAAAC,MAAiB,qBAI7C,IAAMC,EAAQC,GACL,IAAI,QAAQC,GAAW,CAC5B,WAAW,IAAM,CACfA,EAAQ,CACV,EAAGD,EAAI,GAAI,CACb,CAAC,EAEHE,EAAO,aAAc,cAAcC,CAAU,CAC3C,MAAM,QAAS,CACb,aAAMJ,EAAM,CAAC,EACNK,IAAA,OACLA,EAAC,UAAG,UAAQ,CACd,CACF,CACF,CAAC,EAEDF,EAAO,SAAU,cAAcC,CAAU,CAEvC,QAAS,CACP,OAAOC,IAAA,OACLA,EAAC,UAAG,aAAW,EACfA,EAAC,iBAAW,CACd,CACF,CACF,CAAC,EAGDC,EAAOD,EAAC,aAAO,EAAW,MAAM",
+  "names": ["h", "render", "define", "Component", "sleep", "n", "resolve", "define", "Component", "h", "render"]
+}
