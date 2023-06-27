@@ -97,7 +97,7 @@ var D=Object.defineProperty;var j=(t,a,e)=>a in t?D(t,a,{enumerable:!0,configura
   width: var(--left-width);
   height: 100%;
   overflow: auto;
-  background-color: #ccc;
+  background-color: #1e1e1e;
 }
 .container .left .pane {
   padding: 0.5em;
@@ -108,20 +108,20 @@ var D=Object.defineProperty;var j=(t,a,e)=>a in t?D(t,a,{enumerable:!0,configura
 }
 .container .left .pane .navs .nav {
   list-style: none;
-  line-height: 2rem;
+  line-height: 2.5;
   display: block;
   text-indent: 1rem;
   text-decoration: none;
 }
 .container .left .pane .navs .nav.active {
-  color: rgb(21, 17, 17);
-  background-color: rgb(150, 201, 235);
+  color: white;
+  background-color: #6a6a6a;
 }
 .container .left .pane .navs .nav:hover {
-  background-color: rgb(127, 194, 238);
+  background-color: #2a2d2e;
 }
 .container .left .pane .navs a.nav {
-  color: var(--wp-primary);
+  color: white;
 }
 .container .left .pane .navs span.nav {
   color: var(--wp-secondary);

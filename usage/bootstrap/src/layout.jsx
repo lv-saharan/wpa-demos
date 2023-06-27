@@ -3,6 +3,10 @@ const {
   css: { getCSSStyleSheets },
 } = wpa.ui;
 import layoutCSS from "./layout.scss";
+/**
+ * @file layout
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/layout|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

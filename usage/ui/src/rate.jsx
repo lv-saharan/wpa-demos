@@ -1,4 +1,8 @@
 const { h } = wpa;
+/**
+ * @file rate
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/rate|WPA示例}
+ */
 export default (
   <fieldset>
     <legend>

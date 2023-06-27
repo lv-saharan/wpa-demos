@@ -8,7 +8,10 @@ const loadIcons = async (type) => {
   return icons;
 };
 const TYPES = ["filled", "sharp", "two-tone", "outlined", "round"];
-
+/**
+ * @file icon
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/icon|WPA示例}
+ */
 define(
   "icon-demo",
   class extends Component {

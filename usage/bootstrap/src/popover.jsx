@@ -1,5 +1,9 @@
 const { h, define, Component, classNames, uniqueTag } = wpa;
 const { css } = wpa.ui;
+/**
+ * @file popover
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/popover|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

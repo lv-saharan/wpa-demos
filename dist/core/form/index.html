@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+
+</head>
+
+<body>
+    <script>
+
+        class TaskList extends HTMLUListElement {
+            connectedCallback() {
+                // 这里的this就是task-list元素
+                this.classList.add("task-list");
+                // 通过getAttribute方法获取标签上的属性
+                const dataList = JSON.parse(this.getAttribute("data-list") || "[]");
+
+                // 循环创建li元素
+                dataList.forEach((item) => {
+                    const li = document.createElement("li");
+                    li.classList.add("task-item");
+                    li.textContent = item;
+                    this.appendChild(li);
+                });
+            }
+        }
+
+        // 定义task list组件，必须定义{ extends: 'ul' }，否则会报错
+        // Illegal constructor: autonomous custom elements must extend HTMLElement
+        customElements.define("task-list", TaskList, { extends: "ul" });
+
+        class WordCount extends HTMLParagraphElement {
+
+            connectedCallback() {
+                // Always call super first in constructor
+
+                // count words in element's parent element
+                const wcParent = this.parentNode;
+                console.log("parent", wcParent)
+                function countWords(node) {
+                    const text = node.innerText || node.textContent;
+                    return text.trim().split(/\s+/g).filter((a) => a.trim().length > 0).length;
+                }
+
+                const count = `Words: ${countWords(wcParent)}`;
+
+                // Create a shadow root
+                const shadow = this.attachShadow({ mode: 'open' });
+
+                // Create text node and add word count to it
+                const text = document.createElement('span');
+                text.textContent = count;
+
+                // Append it to the shadow root
+                shadow.appendChild(text);
+
+                // Update count when element content changes
+                setInterval(() => {
+                    const count = `Words: ${countWords(wcParent)}`;
+                    text.textContent = count;
+                }, 200);
+            }
+        }
+
+        // Define the new element
+        customElements.define('word-count', WordCount, { extends: 'p' });
+
+
+        class OIForm extends HTMLFormElement {
+
+            connectedCallback() {
+                console.log("created");
+            }
+        }
+        customElements.define('wp-form', OIForm, { extends: 'form' });
+
+    </script>
+    <form is="wp-form">wp-form</form>
+    <ul is="task-list" data-list="[1,2,3,4,5,6,7,8]"></ul>
+    <div>
+        Creating an element which disables the ability to attach a shadow root
+        If the class used for the element contains the static property disabledFeatures returning the string `shadow`
+        this will cause Element.attachShadow() to return a NotSupportedError DOMException.
+        [<p is="word-count"></p>]
+
+    </div>
+</body>
+
+</html>

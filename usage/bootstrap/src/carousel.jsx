@@ -1,5 +1,8 @@
 const { h, define, Component, classNames, uniqueTag } = wpa;
-
+/**
+ * @file carousel
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/carousel|WPA示例}
+ */
 export default (
   <fieldset>
     <legend>Carousel </legend>

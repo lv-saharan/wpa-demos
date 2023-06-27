@@ -1,5 +1,9 @@
 const { h, define, Component, classNames, uniqueTag, createRef } = wpa;
 const { css } = wpa.ui;
+/**
+ * @file offcanvas
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/offcanvas|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

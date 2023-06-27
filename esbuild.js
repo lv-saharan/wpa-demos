@@ -151,7 +151,17 @@ const response = (filePath, res) => {
   }
   return false;
 };
-const { reload } = dev({ ...pkg.localDev.server, response });
+if (mode == "dev") {
+  const { reload } = dev({ ...pkg.localDev.server, response });
+}else{
+  entryRoots.forEach(r=>{
+    let htmls=findHTML(r)
+    for(let html of htmls){
+      console.log("from ",html ,"to",path.join("./dist",html))
+      fs.cpSync(html,path.join("./dist",html))
+    }
+  })
+}
 esbuild
   .build({
     ...options,

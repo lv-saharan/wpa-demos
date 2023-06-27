@@ -22,7 +22,10 @@ define(
     }
   }
 );
-
+/**
+ * @file tab
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/tab|WPA示例}
+ */
 export default (
   <fieldset>
     <legend>

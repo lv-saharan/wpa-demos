@@ -1,6 +1,10 @@
 const { h, define, Component, classNames, uniqueTag } = wpa;
 const { css } = wpa.ui;
-
+ 
+/**
+ * @file accordion
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/accordion|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = css.getCSSStyleSheets("reboot", "accordion")

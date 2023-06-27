@@ -2,6 +2,10 @@ const { h, define, Component, classNames, uniqueTag } = wpa;
 const {
   css: { getCSSStyleSheets },
 } = wpa.ui;
+/**
+ * @file tooltip
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/tooltip|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

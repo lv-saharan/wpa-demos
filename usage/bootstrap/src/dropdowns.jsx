@@ -1,6 +1,9 @@
 const { h, define, Component, classNames, uniqueTag } = wpa;
 const { css } = wpa.ui;
-
+/**
+ * @file dropdowns
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/dropdowns|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = css.getCSSStyleSheets(

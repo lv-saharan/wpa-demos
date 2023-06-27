@@ -1,4 +1,8 @@
 const { h, define, Component } = wpa;
+/**
+ * @file loading
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/loading|WPA示例}
+ */
 export default (
   <fieldset>
     <legend>Loading Effect</legend>

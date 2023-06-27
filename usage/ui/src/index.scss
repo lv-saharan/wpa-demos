@@ -19,7 +19,7 @@
         width: var(--left-width);
         height: 100%;
         overflow: auto;
-        background-color: #ccc;
+        background-color: #1e1e1e;
 
         .pane {
             padding: .5em;
@@ -30,25 +30,25 @@
 
                 .nav {
                     list-style: none;
-                    line-height: 2rem;
+                    line-height: 2.5;
                     display: block;
                     text-indent: 1rem;
                     text-decoration: none;
 
                     &.active {
-                        color: rgb(21, 17, 17);
-                        background-color: rgb(150, 201, 235);
+                        color:white;
+                        background-color: #6a6a6a;
                     }
 
                     &:hover {
-                        background-color: rgb(127, 194, 238);
+                        background-color:#2a2d2e;
                     }
 
 
                 }
 
                 a.nav {
-                    color: var(--wp-primary);
+                    color: white;
                 }
 
                 span.nav {

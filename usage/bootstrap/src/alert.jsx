@@ -10,6 +10,10 @@ const themeColors = [
   "light",
   "dark",
 ];
+/**
+ * @file alter
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/alert|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

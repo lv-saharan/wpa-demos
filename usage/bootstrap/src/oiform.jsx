@@ -3,7 +3,10 @@ const {
   css: { getCSSStyleSheets },
   form,
 } = wpa.ui;
-
+/**
+ * @file form
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/oiform|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [

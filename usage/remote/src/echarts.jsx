@@ -80,6 +80,10 @@ const option4 = {
     },
   ],
 };
+/**
+ * @file echart
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/echarts|WPA示例}
+ */
 const Part = uniqueTag(
   class extends Component {
     render() {

@@ -1,6 +1,9 @@
 const { h, define, Component, classNames, uniqueTag } = wpa;
 const { css } = wpa.ui;
-
+/**
+ * @file card
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/card|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [css.getCSSStyleSheets("reboot", "grid", "card", "utilities")];

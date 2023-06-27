@@ -1,5 +1,8 @@
 import { h, Component, uniqueTag } from "wpa";
-
+/**
+ * @file editor
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/editor|WPA示例}
+ */
 const Part = uniqueTag(
   class extends Component {
     content = "hello！";

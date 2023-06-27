@@ -65,7 +65,10 @@ let nodes = [
     },
   },
 ];
-
+/**
+ * @file sortable
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/sortable|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = css.getCSSStyleSheets(

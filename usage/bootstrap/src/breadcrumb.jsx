@@ -26,6 +26,10 @@ const items = [
     ),
   },
 ];
+/**
+ * @file breadcrumb
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/styles/breadcrumb|WPA示例}
+ */
 const App = uniqueTag(
   class extends Component {
     static css = [css.CSSStyleSheets.reboot, css.CSSStyleSheets.breadcrumb];

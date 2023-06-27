@@ -1,4 +1,8 @@
 const { h } = wpa;
+/**
+ * @file pager
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/pager|WPA示例}
+ */
 export default (
   <div>
     <wp-pagination page-count="100" />

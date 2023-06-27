@@ -1,5 +1,9 @@
 const { h, define, Component, classNames, uniqueTag, createRef } = wpa;
 const { css, uploader } = wpa.ui;
+/**
+ * @file uploader
+ * @see {@link http://wpa.flatweb.net/demos/usage/ui/#/uploader|WPA示例}
+ */
 const Slot = uniqueTag(
   class extends Component {
     static css = `:host{color:red}`;
