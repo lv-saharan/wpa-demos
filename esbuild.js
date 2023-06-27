@@ -161,6 +161,7 @@ if (mode == "dev") {
       fs.cpSync(html,path.join("./dist",html))
     }
   })
+  fs.cpSync("usage/ui/nav.json","dist/usage/ui/nav.json")
 }
 esbuild
   .build({
