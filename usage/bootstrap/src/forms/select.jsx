@@ -59,7 +59,9 @@ const App = uniqueTag(
             aria-label=".form-select-sm example"
           >
             <option selected>Open this select menu</option>
-            {Array.from({ length: 1000 }).map((v, index) => <option>{index}</option>)}
+            {Array.from({ length: 1000 }).map((v, index) => (
+              <option>{index}</option>
+            ))}
           </select>
         </>
       );

@@ -17,9 +17,6 @@ export default (
     </h3>
     <div>
       <wp-rate
-        // onTryRate={(e) => {
-        //   console.log("try rate", e.detail);
-        // }}
         onRate={(e) => {
           alert(e.detail);
         }}
@@ -34,25 +31,25 @@ export default (
     <div>
       <wp-rate
         css={`
-          :host{
-            --wp-icon-color:yellow;
+          :host {
+            --wp-icon-color: yellow;
           }
-          :host .rate-1{
-            --wp-icon-color:gray;
+          :host .rate-1 {
+            --wp-icon-color: gray;
           }
-          :host .rate-2{
-            --wp-icon-color:yellow;
+          :host .rate-2 {
+            --wp-icon-color: yellow;
           }
-          :host .rate-3{
-            --wp-icon-color:green;
+          :host .rate-3 {
+            --wp-icon-color: green;
           }
-          :host .rate-4{
-            --wp-icon-color:blue;
+          :host .rate-4 {
+            --wp-icon-color: blue;
           }
-          :host .rate-5{
-            --wp-icon-color:red;
-            --wp-icon-width:1.1rem;
-            --wp-icon-height:1.1rem;
+          :host .rate-5 {
+            --wp-icon-color: red;
+            --wp-icon-width: 1.1rem;
+            --wp-icon-height: 1.1rem;
           }
         `}
         onRate={(e) => {

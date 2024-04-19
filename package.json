@@ -5,7 +5,7 @@
   "type": "module",
   "devExternals": {
     "wpa": "/node_modules/wpa/dist/wpa.js",
-    "wpa-ui": "/node_modules/wpa-ui/dist/wpa-ui.js"
+    "wpa-ui": "http://localhost:8991/wpa-ui.js"
   },
   "externals": {
     "wpa": "/wpa/latest/wpa.js",
